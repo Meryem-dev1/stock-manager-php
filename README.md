@@ -12,7 +12,7 @@ StockApp est une application web complète développée en PHP/MySQL permettant 
 - Familles : Organisation des articles par catégories (Familles) pour un meilleur classement.
 - Clients : Répertoire des clients pour le suivi des sorties de stock.
 
-   Gestion Financière
+ Gestion Financière
 - Règlements : Suivi des paiements effectués pour chaque commande ou livraison.
 - Modes de Règlement : Gestion des différents types de paiement (Espèces, Chèque, Virement, etc.).
 
