@@ -1,0 +1,85 @@
+body{
+    background-color: #f6f8f8;
+}
+.form {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    width: 50%;
+    position: absolute;
+    top:10%;
+    left:10%;
+  }
+  .form form {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    
+  }
+  .back_btn {
+    color:#9AC1F0;
+    text-decoration: 0;
+    display: flex;
+    align-items: center;
+     font-size: 1.5rem;
+  }
+  .back_btn img {
+    height: 16px;
+    margin-right:5px ;
+  
+  }
+  h2 {
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .erreur_message {
+    color: red;
+    font-size: 12px;
+  }
+ 
+  input{
+    padding: 10px;
+    border: 1px solid #b3b6b6;
+    outline: 0;
+    margin-top: 2px;
+    border-radius: 6px;
+     
+  }
+  input:focus{
+    border: 2px solid #084590;
+  }
+  input[type="submit"]{
+    margin-top: 22px;
+    background-color: #9AC1F0;
+    border: 1px solid #9AC1F0;
+    cursor: pointer;
+    color:#fff;
+    text-transform: uppercase;
+     width: 40%;
+    padding: 9px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+  }
+  ::placeholder{
+    color: rgb(95, 92, 92);
+    font-size: 0.8rem;
+  }
+  input[type="reset"]{
+    
+    background-color: #9AC1F0;
+    border: 1px solid #9AC1F0;
+    cursor: pointer;
+    color:#fff;
+    text-transform: uppercase;
+     width: 20%;
+    padding: 9px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 28%;
+    top: 79%;
+ 
+  }
+ 
