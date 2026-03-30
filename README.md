@@ -29,7 +29,7 @@ StockApp est une application web complète développée en PHP/MySQL permettant 
 - Bibliothèques : jQuery (pour les calculs dynamiques et l'interactivité), SweetAlert (pour les notifications).
 
 Tableau de Bord et Gestion des Caissiers
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png.png)
 
  Module Détail Bon de Livraison (Logique de Calcul)
 ![Détail BL](screenshots/detail_bl.png)
