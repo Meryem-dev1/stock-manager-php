@@ -36,14 +36,9 @@ CREATE TABLE `article` (
   `famille_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `article`
---
 
-INSERT INTO `article` (`id`, `designation`, `prix_ht`, `tva`, `stock`, `famille_id`) VALUES
-(1, 'Smartphone', 300.00, 20.00, 50.00, 1),
-(2, 'Table', 150.00, 20.00, 30.00, 2),
-(3, 'T-shirt', 20.00, 20.00, 200.00, 3);
+
+
 
 -- --------------------------------------------------------
 
@@ -59,13 +54,7 @@ CREATE TABLE `bonlivraison` (
   `caissier_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `bonlivraison`
---
 
-INSERT INTO `bonlivraison` (`id`, `date`, `reglé`, `client_id`, `caissier_id`) VALUES
-(1, '2024-06-14', 0, 1, 1),
-(2, '2024-06-15', 1, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -82,13 +71,7 @@ CREATE TABLE `caissier` (
   `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `caissier`
---
 
-INSERT INTO `caissier` (`id`, `nom`, `prenom`, `poste`, `admin`, `password`) VALUES
-(1, 'Smith', 'John', 'Manager', 1, '1234'),
-(2, 'Doe', 'Jane', 'Cashier', 0, '1234');
 
 -- --------------------------------------------------------
 
@@ -104,13 +87,7 @@ CREATE TABLE `client` (
   `ville` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `client`
---
 
-INSERT INTO `client` (`id`, `nom`, `prenom`, `adresse`, `ville`) VALUES
-(1, 'Brown', 'Charlie', '123 Elm St', 'Springfield'),
-(2, 'Black', 'Lucy', '456 Oak St', 'Shelbyville');
 
 -- --------------------------------------------------------
 
@@ -125,14 +102,7 @@ CREATE TABLE `detail_bl` (
   `qte` double(8,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `detail_bl`
---
 
-INSERT INTO `detail_bl` (`id`, `article_id`, `bl_id`, `qte`) VALUES
-(1, 1, 1, 2.00),
-(2, 2, 1, 1.00),
-(3, 3, 2, 5.00);
 
 -- --------------------------------------------------------
 
@@ -145,14 +115,7 @@ CREATE TABLE `famille` (
   `famille` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `famille`
---
 
-INSERT INTO `famille` (`id`, `famille`) VALUES
-(1, 'Electronics'),
-(2, 'Furniture'),
-(3, 'Clothing');
 
 -- --------------------------------------------------------
 
@@ -165,14 +128,7 @@ CREATE TABLE `mode_reglement` (
   `mode` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Déchargement des données de la table `mode_reglement`
---
 
-INSERT INTO `mode_reglement` (`id`, `mode`) VALUES
-(1, 'Cash'),
-(2, 'Credit Card'),
-(3, 'Bank Transfer');
 
 -- --------------------------------------------------------
 
@@ -192,9 +148,7 @@ CREATE TABLE `reglement` (
 -- Déchargement des données de la table `reglement`
 --
 
-INSERT INTO `reglement` (`id`, `date`, `montant`, `bl_id`, `mode_id`) VALUES
-(1, '2024-06-16', 600.00, 1, 1),
-(2, '2024-06-17', 200.00, 2, 2);
+
 
 --
 -- Index pour les tables déchargées
